@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  atwhitelightsource:
+    image: lsst/queue:latest
+    volumes:
+      - type: bind
+        source: ./
+        target: /home/saluser/repos/ts_ATWhitelightSource
